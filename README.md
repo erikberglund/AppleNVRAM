@@ -1,0 +1,2 @@
+# nvram-variables
+NVRAM variables 
