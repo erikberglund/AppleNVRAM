@@ -56,15 +56,16 @@ Bootloaders
 
 **GUID Variables**
 
-| Variable Name           | Source | 
-|:------------------------|:-------|
-|                         |        |
+| Variable Name             | Source | 
+|:--------------------------|:-------|
+| APPLE\_NVRAM\_VARIABLE\_GUID | [github.com/dmoulding/macosxbootloader](https://github.com/dmoulding/macosxbootloader/blob/dc51af08d75a9ad53e0a4050ba51119898d09bba/sdk/include/Guid/AppleNVRAMVariable/AppleNVRAMVariable.h) |
 
 **NVRAM Variables**
 
 | Variable                   | Attribute | Size | Description | 
 |:---------------------------|:----------|:-----|:------------|
 | AAPL,PanicInfo0000         |           |      |             |
+| AAPL,PanicInfoLog          |           |      |             |
 | ALS_Data                   |           |      |             |
 | backlight-level            |           |      |             |
 | bluetoothActiveControllerInfo |           |      |             |
@@ -79,8 +80,8 @@ Bootloaders
 | csr-active-config          |           |      |             |
 | csr-data                   |           |      |             |
 | efi-apple-recovery         |           |      |             |
-| efi-apple-payload0         |           |      |             |
-| efi-apple-payload0-data    |           |      |             |
+| efi-apple-payload#         |           |      |             |
+| efi-apple-payload#-data    |           |      |             |
 | efi-boot-device            |           |      |             |
 | efi-boot-device-data       |           |      |             |
 | efi-boot-mkext             |           |      |             |
@@ -95,9 +96,13 @@ Bootloaders
 | EFICapsule_Result          |           |      |             |
 | fmm-computer-name          |           |      |             |
 | fmm-mobileme-token-FMM     |           |      |             |
-| prev-lang:kbd              |           |      |             |
+| gpu-policy                 |           |      |             |
+| KTSStatus                  |           |      |             |
+| KTSPreviou                 |           |      |             |
+| KTSResult                  |           |      |             |
 | LocationServicesEnabled    |           |      |             |
 | platform-uuid              |           |      |             |
+| prev-lang:kbd              |           |      |             |
 | recovery-boot-mode         |           |      |             |
 | SmcFlasherResult           |           |      |             |
 | SystemAudioVolume          |           |      |             |
@@ -106,6 +111,8 @@ Bootloaders
 | usb-cr-rec                 |           |      |             |
 
 **NVRAM Variable List**
+
+**Note: When accessing these using the `/usr/sbin/nvram` tool, the GUID must be omitted!**
 
 ```
 7C436110-AB2A-4BBB-A880-FE41995C9F82:AAPL,PanicInfo0000
@@ -126,6 +133,14 @@ Bootloaders
 7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-apple-recovery
 7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-apple-payload0
 7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-apple-payload0-data
+7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-apple-payload1
+7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-apple-payload1-data
+7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-apple-payload2
+7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-apple-payload2-data
+7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-apple-payload3
+7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-apple-payload3-data
+7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-apple-payload#
+7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-apple-payload#-data
 7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-boot-device
 7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-boot-device-data
 7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-boot-mkext
@@ -140,9 +155,13 @@ Bootloaders
 7C436110-AB2A-4BBB-A880-FE41995C9F82:EFICapsule_Result
 7C436110-AB2A-4BBB-A880-FE41995C9F82:fmm-computer-name
 7C436110-AB2A-4BBB-A880-FE41995C9F82:fmm-mobileme-token-FMM
-7C436110-AB2A-4BBB-A880-FE41995C9F82:prev-lang:kbd
+7C436110-AB2A-4BBB-A880-FE41995C9F82:gpu-policy
+7C436110-AB2A-4BBB-A880-FE41995C9F82:KTSStatus
+7C436110-AB2A-4BBB-A880-FE41995C9F82:KTSPrevious
+7C436110-AB2A-4BBB-A880-FE41995C9F82:KTSResult
 7C436110-AB2A-4BBB-A880-FE41995C9F82:LocationServicesEnabled
 7C436110-AB2A-4BBB-A880-FE41995C9F82:platform-uuid
+7C436110-AB2A-4BBB-A880-FE41995C9F82:prev-lang:kbd
 7C436110-AB2A-4BBB-A880-FE41995C9F82:recovery-boot-mode
 7C436110-AB2A-4BBB-A880-FE41995C9F82:SmcFlasherResult
 7C436110-AB2A-4BBB-A880-FE41995C9F82:SystemAudioVolume
