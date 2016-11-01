@@ -358,7 +358,7 @@ AF9FFD67-EC10-488A-9DFC-6CBF5EE22C2E:AcpiGlobalVariable
 
 | Format  | Value | 
 |:--------|:------|
-| #define |  |
+| #define | {0x8BE4DF61, 0x93CA, 0x11d2, 0xAA, 0x0D, 0x00, 0xE0, 0x98, 0x03, 0x2B, 0x8C } |
 | ASCII   | 8BE4DF61-93CA-11D2-AA0D-00E098032B8C |
 
 **GUID Variables**
