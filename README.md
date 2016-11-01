@@ -5,6 +5,7 @@ This is a collection of Apple-related nvram variables.
 ### Links
 
 * [UEFI Specification](http://www.uefi.org/specifications)
+* [UEFI Tool](https://github.com/LongSoft/UEFITool)
 * [github.com/gdbinit/firmware_vault](https://github.com/gdbinit/firmware_vault)
 
 ### GUID Index
