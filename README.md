@@ -1,4 +1,6 @@
-This is a list of Apple-related nvram variables.
+# AppleNVRAM
+
+This is a collection of Apple-related nvram variables.
 
 ### Links
 
@@ -9,34 +11,34 @@ This is a list of Apple-related nvram variables.
 
 Apple
 
-* [7C436110-AB2A-4BBB-A880-FE41995C9F82]()
-* [4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14]()
-* [AF9FFD67-EC10-488A-9DFC-6CBF5EE22C2E]()
-* [8D63D4FE-BD3C-4AAD-881D-86FD974BC1DF]()
-* [9EBA2D25-BBE3-4AC2-A2C6-C87F44A1278C]()
-* [36C28AB5-6566-4C50-9EBD-CBB920F83843]()
-
-Undefined
-
-* [4DFBBAAB-1392-4FDE-ABB8-C41CC5AD7D5D]()
-* [79941ECD-ED36-49D0-8124-E4C31AC75CD4]()
-* [05299C28-3953-4A5F-B7D8-F6C6A7150B2A]()
-* [EB704011-1402-11D3-8E77-00A0C969723B]()
+* [7C436110-AB2A-4BBB-A880-FE41995C9F82](https://github.com/erikberglund/AppleNVRAM#7C436110-AB2A-4BBB-A880-FE41995C9F82)
+* [4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14](https://github.com/erikberglund/AppleNVRAM#4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14)
+* [AF9FFD67-EC10-488A-9DFC-6CBF5EE22C2E](https://github.com/erikberglund/AppleNVRAM#AF9FFD67-EC10-488A-9DFC-6CBF5EE22C2E)
+* [8D63D4FE-BD3C-4AAD-881D-86FD974BC1DF](https://github.com/erikberglund/AppleNVRAM#8D63D4FE-BD3C-4AAD-881D-86FD974BC1DF)
+* [9EBA2D25-BBE3-4AC2-A2C6-C87F44A1278C](https://github.com/erikberglund/AppleNVRAM#9EBA2D25-BBE3-4AC2-A2C6-C87F44A1278C)
+* [36C28AB5-6566-4C50-9EBD-CBB920F83843](https://github.com/erikberglund/AppleNVRAM#36C28AB5-6566-4C50-9EBD-CBB920F83843)
 
 General
 
-* [8BE4DF61-93CA-11D2-AA0D-00E098032B8C]()
+* [8BE4DF61-93CA-11D2-AA0D-00E098032B8C](https://github.com/erikberglund/AppleNVRAM#8BE4DF61-93CA-11D2-AA0D-00E098032B8C)
+
+Undefined
+
+* [4DFBBAAB-1392-4FDE-ABB8-C41CC5AD7D5D](https://github.com/erikberglund/AppleNVRAM#4DFBBAAB-1392-4FDE-ABB8-C41CC5AD7D5D)
+* [79941ECD-ED36-49D0-8124-E4C31AC75CD4](https://github.com/erikberglund/AppleNVRAM#79941ECD-ED36-49D0-8124-E4C31AC75CD4)
+* [05299C28-3953-4A5F-B7D8-F6C6A7150B2A](https://github.com/erikberglund/AppleNVRAM#05299C28-3953-4A5F-B7D8-F6C6A7150B2A)
+* [EB704011-1402-11D3-8E77-00A0C969723B](https://github.com/erikberglund/AppleNVRAM#EB704011-1402-11D3-8E77-00A0C969723B)
 
 Bootloaders
 
-* [36D08FA7-CF0B-42F5-8F14-68DF73ED3740]()
-* [4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102]()
+* [36D08FA7-CF0B-42F5-8F14-68DF73ED3740](https://github.com/erikberglund/AppleNVRAM#36D08FA7-CF0B-42F5-8F14-68DF73ED3740)
+* [4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102](https://github.com/erikberglund/AppleNVRAM#4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102)
 
 ### Attribues
 
-| Attribute |                        |
+| Attribute | Description            |
 |:----------|:-----------------------|
-| AT        |                        |
+| AT        | ?                      |
 | RT        | Available at runtime   |
 | BS        | Available at boot time |
 | NV        | Non-volatile           |
