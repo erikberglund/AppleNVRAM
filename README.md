@@ -106,7 +106,7 @@ Bootloaders
 | fmm-mobileme-token-FMM     |           |      |             |
 | gpu-policy                 |           |      |             |
 | KTSStatus                  |           |      |             |
-| KTSPreviou                 |           |      |             |
+| KTSPrevious                |           |      |             |
 | KTSResult                  |           |      |             |
 | LocationServicesEnabled    |           |      |             |
 | platform-uuid              |           |      |             |
