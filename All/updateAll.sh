@@ -8,7 +8,7 @@ regexGUID=".*/[0-9A-Za-z]{8}-[0-9A-Za-z]{4}-[0-9A-Za-z]{4}-[0-9A-Za-z]{4}-[0-9A-
 # Get path to current folder
 folderAll="$( ( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd ) )"
 
-fileAll="${folderAll}/all.md"
+fileAll="${folderAll}/README.md"
 
 # Write header
 {
