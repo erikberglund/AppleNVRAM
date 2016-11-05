@@ -19,7 +19,7 @@ Firmware Files
 
 Apple
 
-* [7C436110-AB2A-4BBB-A880-FE41995C9F82](https://github.com/erikberglund/AppleNVRAM#7C436110-AB2A-4BBB-A880-FE41995C9F82)
+* [7C436110-AB2A-4BBB-A880-FE41995C9F82](https://github.com/erikberglund/AppleNVRAM/7C436110-AB2A-4BBB-A880-FE41995C9F82)
 * [4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14](https://github.com/erikberglund/AppleNVRAM#4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14)
 * [AF9FFD67-EC10-488A-9DFC-6CBF5EE22C2E](https://github.com/erikberglund/AppleNVRAM#AF9FFD67-EC10-488A-9DFC-6CBF5EE22C2E)
 * [8D63D4FE-BD3C-4AAD-881D-86FD974BC1DF](https://github.com/erikberglund/AppleNVRAM#8D63D4FE-BD3C-4AAD-881D-86FD974BC1DF)
@@ -52,131 +52,6 @@ Bootloaders
 | NV        | Non-volatile           |
 
 # Apple
-
-## 7C436110-AB2A-4BBB-A880-FE41995C9F82
-
-**GUID Formats**
-
-| Format  | Value | 
-|:--------|:------|
-| #define | {0x7c436110, 0xab2a, 0x4bbb, 0xa8, 0x80, 0xfe, 0x41, 0x99, 0x5c, 0x9f, 0x82} |
-| ASCII   | 7C436110-AB2A-4BBB-A880-FE41995C9F82 |
-
-**GUID Variables**
-
-| Variable Name             | Source | 
-|:--------------------------|:-------|
-| APPLE\_NVRAM\_VARIABLE\_GUID | [github.com/dmoulding/macosxbootloader](https://github.com/dmoulding/macosxbootloader/blob/dc51af08d75a9ad53e0a4050ba51119898d09bba/sdk/include/Guid/AppleNVRAMVariable/AppleNVRAMVariable.h) |
-
-**NVRAM Variables**
-
-| Variable                   | Attribute | Size | Description | 
-|:---------------------------|:----------|:-----|:------------|
-| AAPL,PanicInfo0000         |           |      |             |
-| AAPL,PanicInfoLog          |           |      |             |
-| ALS_Data                   |           |      |             |
-| backlight-level            |           |      |             |
-| bluetoothActiveControllerInfo |           |      |             |
-| bluetoothInternalControllerInfo |           |      |             |
-| BootCampHD                 |           |      |             |
-| BootCampProcessorPstates   |           |      |             |
-| boot-args                  |           |      |             |
-| boot-gamma                 |           |      |             |
-| boot-image                 |           |      |             |
-| boot-switch-vars           |           |      |             |
-| boot-signature             |           |      |             |
-| csr-active-config          |           |      |             |
-| csr-data                   |           |      |             |
-| efi-apple-recovery         |           |      |             |
-| efi-apple-payload#         |           |      |             |
-| efi-apple-payload#-data    |           |      |             |
-| efi-boot-device            |           |      |             |
-| efi-boot-device-data       |           |      |             |
-| efi-boot-mkext             |           |      |             |
-| efi-boot-next              |           |      |             |
-| efi-boot-file              |           |      |             |
-| efi-boot-file-data         |           |      |             |
-| efi-boot-kernelcache       |           |      |             |
-| efi-boot-kernelcache-data  |           |      |             |
-| efi-legacy-drive-hint      |           |      |             |
-| efi-legacy-drive-hint-data |           |      |             |
-| efiboot-perf-record        |           |      |             |
-| EFICapsule_Result          |           |      |             |
-| fmm-computer-name          |           |      |             |
-| fmm-mobileme-token-FMM     |           |      |             |
-| gpu-policy                 |           |      |             |
-| KTSStatus                  |           |      |             |
-| KTSPrevious                |           |      |             |
-| KTSResult                  |           |      |             |
-| LocationServicesEnabled    |           |      |             |
-| platform-uuid              |           |      |             |
-| prev-lang:kbd              |           |      |             |
-| recovery-boot-mode         |           |      |             |
-| SmcFlasherResult           |           |      |             |
-| SystemAudioVolume          |           |      |             |
-| SystemAudioVolumeDB        |           |      |             |
-| system-id                  |           |      |             |
-| usb-cr-rec                 |           |      |             |
-
-**NVRAM Variable List**
-
-**Note: When accessing these using the `/usr/sbin/nvram` tool, the GUID must be omitted!**
-
-```
-7C436110-AB2A-4BBB-A880-FE41995C9F82:AAPL,PanicInfo0000
-7C436110-AB2A-4BBB-A880-FE41995C9F82:AAPL,PanicInfoLog
-7C436110-AB2A-4BBB-A880-FE41995C9F82:ALS_Data
-7C436110-AB2A-4BBB-A880-FE41995C9F82:backlight-level
-7C436110-AB2A-4BBB-A880-FE41995C9F82:bluetoothActiveControllerInfo
-7C436110-AB2A-4BBB-A880-FE41995C9F82:bluetoothInternalControllerInfo
-7C436110-AB2A-4BBB-A880-FE41995C9F82:BootCampHD
-7C436110-AB2A-4BBB-A880-FE41995C9F82:BootCampProcessorPstates
-7C436110-AB2A-4BBB-A880-FE41995C9F82:boot-args
-7C436110-AB2A-4BBB-A880-FE41995C9F82:boot-gamma
-7C436110-AB2A-4BBB-A880-FE41995C9F82:boot-image
-7C436110-AB2A-4BBB-A880-FE41995C9F82:boot-switch-vars
-7C436110-AB2A-4BBB-A880-FE41995C9F82:boot-signature
-7C436110-AB2A-4BBB-A880-FE41995C9F82:csr-active-config
-7C436110-AB2A-4BBB-A880-FE41995C9F82:csr-data
-7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-apple-recovery
-7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-apple-payload0
-7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-apple-payload0-data
-7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-apple-payload1
-7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-apple-payload1-data
-7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-apple-payload2
-7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-apple-payload2-data
-7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-apple-payload3
-7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-apple-payload3-data
-7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-apple-payload#
-7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-apple-payload#-data
-7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-boot-device
-7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-boot-device-data
-7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-boot-mkext
-7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-boot-next
-7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-boot-file
-7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-boot-file-data
-7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-boot-kernelcache
-7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-boot-kernelcache-data
-7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-legacy-drive-hint
-7C436110-AB2A-4BBB-A880-FE41995C9F82:efi-legacy-drive-hint-data
-7C436110-AB2A-4BBB-A880-FE41995C9F82:efiboot-perf-record
-7C436110-AB2A-4BBB-A880-FE41995C9F82:EFICapsule_Result
-7C436110-AB2A-4BBB-A880-FE41995C9F82:fmm-computer-name
-7C436110-AB2A-4BBB-A880-FE41995C9F82:fmm-mobileme-token-FMM
-7C436110-AB2A-4BBB-A880-FE41995C9F82:gpu-policy
-7C436110-AB2A-4BBB-A880-FE41995C9F82:KTSStatus
-7C436110-AB2A-4BBB-A880-FE41995C9F82:KTSPrevious
-7C436110-AB2A-4BBB-A880-FE41995C9F82:KTSResult
-7C436110-AB2A-4BBB-A880-FE41995C9F82:LocationServicesEnabled
-7C436110-AB2A-4BBB-A880-FE41995C9F82:platform-uuid
-7C436110-AB2A-4BBB-A880-FE41995C9F82:prev-lang:kbd
-7C436110-AB2A-4BBB-A880-FE41995C9F82:recovery-boot-mode
-7C436110-AB2A-4BBB-A880-FE41995C9F82:SmcFlasherResult
-7C436110-AB2A-4BBB-A880-FE41995C9F82:SystemAudioVolume
-7C436110-AB2A-4BBB-A880-FE41995C9F82:SystemAudioVolumeDB
-7C436110-AB2A-4BBB-A880-FE41995C9F82:system-id
-7C436110-AB2A-4BBB-A880-FE41995C9F82:usb-cr-rec
-```
 
 ## 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14
 
